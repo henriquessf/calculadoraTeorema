@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculadora de teorema</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Calculadora de teorema</h1>
+      <div class="how-to-use">
+        <h2>Como usar:</h2>
+        <p>Preencha os valores disponíveis e deixe em branco o valor que quer descobrir.</p>
+      </div>
+      <div>
+        <img
+          src="https://www.matematica.pt/images/teorema-de-pitagoras.png"
+          alt="teorema"
+        ></img>
+      </div>
+      <div class="values">
+        <ul>
+          <li>
+            Valor da Hipotenusa:
+            <input class="hipotenusa" type="number" placeholder="?"></input>
+          </li>
+          <li>
+            Valor do Cateto 1:
+            <input class="cateto-um" type="number" placeholder="3"></input>
+          </li>
+          <li>
+            Valor do Cateto 2:
+            <input class="cateto-dois" type="number" placeholder="4"></input>
+          </li>
+          <li>
+            Resultado:
+            <input type="text" name="resultado" class="resultado">
+          </li>
+        </ul>
+      </div>
+      <button class="calculate">Calcular</button>
+    </div>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
